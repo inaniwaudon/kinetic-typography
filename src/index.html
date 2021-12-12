@@ -2,14 +2,34 @@
 <html>
   <head>
     <title>Kinetic Typography</title>
-    <script src="index.js"></script>
   </head>
   <body>
-    <canvas></canvas>
+    <main>
+      <div id="display">
+        <canvas></canvas>
+        <video width="1920" height="1080" controls></video>
+      </div>
+      <button id="convert">変換</button>
+    </main>
   </body>
   <style>
+    #display {
+      display: flex;
+    }
     canvas {
       width: 50%;
+      height: 50%;
+    }
+    video {
+      width: 40%;
+      height: 40%;
+    }
+    button {
+      color: lightseagreen;
+      margin-top: 10px;
+      padding: 6px 12px;
+      border: solid 1px lightseagreen;
+      background: #fff;
     }
   </style>
 </html>
